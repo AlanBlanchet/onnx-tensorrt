@@ -1,0 +1,19 @@
+[project]
+name = "onnx_tensorrt"
+version = "10.2.0"
+description = "ONNX-TensorRT - TensorRT backend for running ONNX models"
+authors = [{ name = "NVIDIA", email = "svc_tensorrt@nvidia.com" }]
+classifiers = [
+    'Intended Audience :: Developers',
+    'Programming Language :: Python :: 3',
+]
+dependencies = ["pycuda", "numpy", "onnx"]
+requires-python = ">=3.7"
+readme = "README.md"
+
+[project.urls]
+Repository = "https://github.com/onnx/onnx-tensorrt"
+
+[build-system]
+requires = ["setuptools", "cython ~= 0.29.0"]
+build-backend = "setuptools.build_meta"
